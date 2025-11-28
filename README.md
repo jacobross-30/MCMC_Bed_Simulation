@@ -28,6 +28,14 @@ This repository contains my workflow for generating probabilistic realizations o
 
 - Van Wessem, J. M., Van de Berg, W. J., and Van den Broeke, M. R.: Data set: Monthly averaged RACMO2.3p2 variables (1979–2022), Antarctica, Zenodo [data set], https://doi.org/10.5281/zenodo.7845736 Date Accessed 11-18-2025
 
+**Environment**
+
+We recommend creating a conda (or R) environment with the necessary packages.
+For example
+- conda env create -f environment.yml
+- conda activate gstatsMCMC
+- jupyter lab
+
 **Software:**
 
 - Python 3.10.9
