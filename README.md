@@ -2,7 +2,14 @@
 Authors: Jake Ross, Emma (Mickey) MacKie, Niya Shao
 **Overview:**
 
-This repository contains my workflow for generating probabilistic realizations of Ninnis Glacier’s subglacial topography using a Markov Chain Monte Carlo (MCMC) framework along with geostatistical simulation. This approach produces mass-conserving bed elevation realizations, allowing us to quantify uncertainty and explore the non-uniqueness inherent in subglacial topography. By constructing many plausible bed geometries, this method supports improved modeling of glacier dynamics, ice-sheet evolution, and sea-level contributions. We additionally compare our generated bed realizations with existing large-scale products, including Bedmap and BedMachine, to evaluate consistency, differences, and potential improvements in localized bed estimates for the Ninnis region.
+This repository contains my workflow for generating probabilistic realizations of Ninnis Glacier’s subglacial topography using a Markov Chain Monte Carlo (MCMC) framework combined with geostatistical simulation. This approach produces mass-conserving bed elevation realizations, allowing us to quantify uncertainty and explore the non-uniqueness inherent in subglacial topography. By constructing many plausible bed geometries, this method supports improved modeling of glacier dynamics, ice-sheet evolution, and sea-level contributions.
+
+Ninnis Glacier is a fast-flowing outlet glacier on the George V Coast of East Antarctica, draining into the Southern Ocean through the broad Ninnis Glacier Tongue. The glacier has a long history of rapid advance–retreat cycles: satellite observations show multi-decadal tongue regrowth punctuated by major calving events roughly every 20–30 years. These cycles highlight the glacier’s dynamic nature and the structural vulnerability of its floating extension.
+
+Modern geophysical work reveals that deep troughs and seafloor irregularities beneath the glacier tongue allow warm ocean water to access its cavity, promoting basal melting and influencing grounding-line stability. Geological studies also suggest that both Ninnis and its neighbor, Mertz Glacier, may overlie ancient impact crater structures—long-term controls that have helped guide ice flow and shape present-day glacier morphology. Together, these oceanic, geological, and dynamic factors make Ninnis an excellent testbed for understanding how local bed conditions influence outlet-glacier behavior in East Antarctica.
+
+We additionally compare our generated bed realizations with existing large-scale products, including Bedmap and BedMachine, to evaluate consistency, differences, and potential improvements in localized bed estimates for the Ninnis region.
+
 
 ![github figures 2](https://github.com/user-attachments/assets/e2efbc46-deab-4a72-abf6-c0c6b1982802)
 
