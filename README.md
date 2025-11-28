@@ -30,4 +30,6 @@ This repository contains my workflow for generating probabilistic realizations o
 
 **Software:**
 
-- I'm not sure where to find the original articles for the software packages. lots of results come up when I type into google scholar
+- Python 3.10.9
+- https://github.com/NiyaShao/geostatisticalMCMC
+  
