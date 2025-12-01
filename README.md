@@ -11,7 +11,8 @@ Modern geophysical work reveals that deep troughs and seafloor irregularities be
 We additionally compare our generated bed realizations with existing large-scale products, including Bedmap and BedMachine, to evaluate consistency, differences, and potential improvements in localized bed estimates for the Ninnis region.
 
 
-![github figures 2](https://github.com/user-attachments/assets/e2efbc46-deab-4a72-abf6-c0c6b1982802)
+<img width="1051" height="552" alt="figures for github" src="https://github.com/user-attachments/assets/32e45893-04db-4a56-a776-f10e15f0278a" />
+
 
 **Data:**
 
