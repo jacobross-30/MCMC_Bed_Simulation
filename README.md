@@ -64,19 +64,30 @@ For example
 **File Descriptions**
 
 T1_LoadData_update.ipynb
+
 - Used to load all the required data files and crop the study area to look at the high velocity region
+
 Lab2_IceFluxaDivergence.ipynb
+
 - Used to determine the mass flux residual of the study area.
+  
 Lab3_Geostatistics_2.ipynb
+
 - Normalizes the data so we cand create a geostatistical realization.
 - Creates a variogram and compares it to the Bedmachine variogram.
 - Generates an SGS realization.
+
 T2_StatisticalAnalysis_update.ipynb
+
 - Used to generate an SGS bed (use this one to initiate the MCMC large scale chain)
+
 T3_LargeScaleChain_3.ipynb
+
 - The large scale chain guesses possible bed topographies and accepts or rejects the guess
 - run for however many iterations it takes for the loss curve to flatten out
+
 T4_SmallScaleChain_3.ipynb
+
 - The small scale chain takes the last bed from the large scale chain and finely tunes it.
 - run this until the small scale chain levels off.
 - the final loss should be around or lower than the loss of bedmachine
