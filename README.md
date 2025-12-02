@@ -138,5 +138,21 @@ Topography.py
 - Computes spatially correlated perturbations, applies smoothing or tapering as needed, and prepares bed updates for the MCMC sampler.
 - Includes utilities for loading existing bed datasets (e.g., BedMachine), computing gradients/slopes, and generating topographic fields used during both initialization and the proposal steps within the MCMC workflow.
 
+**Usage Instructions**
 
+1. Clone the repository
+2. Prepare the data
+
+- Place all required datasets into a data directory:
+
+3. Run the preprocessing notebooks
+
+- T1_LoadData_update.ipynb – loads and crops data
+- Lab2_IceFluxDivergence.ipynb – computes mass flux residual
+- Lab3_Geostatistics_2.ipynb – builds variogram and generates SGS realization
+- T2_StatisticalAnalysis_update.ipynb – produces the initial SGS bed for MCMC
+
+These steps prepare all inputs for the MCMC inversion.
+
+4. Run the MCMC inversion in T3 and T4
   
