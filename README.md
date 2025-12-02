@@ -6,7 +6,9 @@ This repository contains my workflow for generating probabilistic realizations o
 
 Ninnis Glacier is a fast-flowing outlet glacier on the George V Coast of East Antarctica, draining into the Southern Ocean through the broad Ninnis Glacier Tongue. The glacier has a long history of rapid advance–retreat cycles: satellite observations show multi-decadal tongue regrowth punctuated by major calving events roughly every 20–30 years. These cycles highlight the glacier’s dynamic nature and the structural vulnerability of its floating extension.
 
-Modern geophysical work reveals that deep troughs and seafloor irregularities beneath the glacier tongue allow warm ocean water to access its cavity, promoting basal melting and influencing grounding-line stability. Geological studies also suggest that both Ninnis and its neighbor, Mertz Glacier, may overlie ancient impact crater structures—long-term controls that have helped guide ice flow and shape present-day glacier morphology. Together, these oceanic, geological, and dynamic factors make Ninnis an excellent testbed for understanding how local bed conditions influence outlet-glacier behavior in East Antarctica.
+Modern geophysical work reveals that deep troughs and seafloor irregularities beneath the glacier tongue allow warm ocean water to access its cavity, promoting basal melting and influencing grounding-line stability. Geological studies also suggest that both Ninnis and its neighbor, Mertz Glacier, may overlie ancient impact crater structures—long-term controls that have helped guide ice flow and shape present-day glacier morphology.
+
+Together, these oceanic, geological, and dynamic factors make Ninnis an excellent testbed for understanding how local bed conditions influence outlet-glacier behavior in East Antarctica.
 
 We additionally compare our generated bed realizations with existing large-scale products, including Bedmap and BedMachine, to evaluate consistency, differences, and potential improvements in localized bed estimates for the Ninnis region.
 
@@ -92,6 +94,18 @@ T4_SmallScaleChain_3.ipynb
 - The small scale chain takes the last bed from the large scale chain and finely tunes it.
 - run this until the small scale chain levels off.
 - the final loss should be around or lower than the loss of bedmachine
+
+MCMC.py
+
+- Contains the full implementation of the Markov Chain Monte Carlo (MCMC) algorithm used to explore possible bed topographies.
+- Proposes perturbations to the current bed, evaluates the mass-conservation loss, and accepts or rejects each proposal based on the likelihood function.
+- Tracks chain diagnostics (loss history, accepted states, iteration count) and outputs the accepted bed realizations used in the large-scale and small-scale chains.
+
+Topography.py
+
+- Defines functions for handling, modifying, and evaluating bed topography grids.
+- Computes spatially correlated perturbations, applies smoothing or tapering as needed, and prepares bed updates for the MCMC sampler.
+- Includes utilities for loading existing bed datasets (e.g., BedMachine), computing gradients/slopes, and generating topographic fields used during both initialization and the proposal steps within the MCMC workflow.
 
 
   
