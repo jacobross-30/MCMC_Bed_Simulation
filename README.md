@@ -158,3 +158,21 @@ These steps prepare all inputs for the MCMC inversion.
 
 5. Run the MCMC inversion in T3 and T4
   
+**Limitations**
+
+1. Limited validity outside the high-velocity region
+
+- The inversion relies on mass conservation, which is strongly constrained only where ice velocities are high and well-resolved.
+Because of this, the method produces reliable bed estimates only within the high-velocity core of the glacier.
+Areas outside this zone have weak or noisy velocity information, so the inferred bed there is significantly less accurate and should be interpreted with caution.
+
+2. Small-scale chain does not perfectly match large-scale loss behavior
+
+- The small-scale chain begins from the final bed of the large-scale chain, but the two chains operate at different spatial resolutions and propose different types of perturbations.
+- As a result, the absolute loss values are not directly comparable between the two chains and will not match exactly, even when both have converged.
+
+3. Loss increases after the small-scale chain levels off
+
+- In some runs, the small-scale chain shows a slight increase in loss after an initial stabilization period.
+This occurs because the fine-scale perturbations used in the small chain can introduce short-wavelength roughness that locally increases flux divergence, even if the overall bed shape is physically reasonable.
+- This behavior indicates that the small chain may be over-refining or exploring noise rather than improving the physical fit, and the chain should be stopped once the loss reaches its minimum and begins to rise.
