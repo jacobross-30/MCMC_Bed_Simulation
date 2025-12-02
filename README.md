@@ -1,4 +1,5 @@
 # MCMC_Bed_Simulation
+
 Authors: Jake Ross, Emma (Mickey) MacKie, Niya Shao
 
 **Overview:**
