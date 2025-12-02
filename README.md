@@ -1,5 +1,6 @@
 # MCMC_Bed_Simulation
 Authors: Jake Ross, Emma (Mickey) MacKie, Niya Shao
+
 **Overview:**
 
 This repository contains my workflow for generating probabilistic realizations of Ninnis Glacier’s subglacial topography using a Markov Chain Monte Carlo (MCMC) framework combined with geostatistical simulation. This approach produces mass-conserving bed elevation realizations, allowing us to quantify uncertainty and explore the non-uniqueness inherent in subglacial topography. By constructing many plausible bed geometries, this method supports improved modeling of glacier dynamics, ice-sheet evolution, and sea-level contributions.
