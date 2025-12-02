@@ -41,15 +41,16 @@ We additionally compare our generated bed realizations with existing large-scale
 **Python Packages**
 
 - numpy
-- scipy
 - matplotlib
 - pandas
 - xarray
-- netCDF4
-- scikit-learn
-- pyproj
-- cartopy
-- tqdm
+- verde
+- geopandas
+- gstatsim
+- Topography
+- MCMC
+- sklearn
+- skstat
 
 **Environment**
 
