@@ -70,6 +70,11 @@ For example
 T1_LoadData_update.ipynb
 
 - Used to load all the required data files and crop the study area to look at the high velocity region
+- Outputs:
+
+-- Cropped study-area grids (surface, SMB, velocity, mask).
+-- Preview figures of the high-velocity region.
+--Saved NumPy/NetCDF arrays used by later steps.
 
 Lab2_IceFluxaDivergence.ipynb
 
