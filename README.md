@@ -74,32 +74,57 @@ T1_LoadData_update.ipynb
 
   - Cropped study-area grids (surface, SMB, velocity, mask).
   - Preview figures of the high-velocity region.
-  -Saved NumPy/NetCDF arrays used by later steps.
+  - Saved NumPy/NetCDF arrays used by later steps.
 
 Lab2_IceFluxaDivergence.ipynb
 
 - Used to determine the mass flux residual of the study area.
+- Outputs:
+  
+  - Mass flux divergence residual map.
+  - Diagnostic plots of flux difference.
+  - Residual arrays saved for later loss calculations.
   
 Lab3_Geostatistics_2.ipynb
 
 - Normalizes the data so we cand create a geostatistical realization.
 - Creates a variogram and compares it to the Bedmachine variogram.
 - Generates an SGS realization.
+- Outputs:
+
+  - Normalized bed and geostatistical inputs.
+  - Variogram plots and BedMachine comparison.
+  - An SGS bed realization.
 
 T2_StatisticalAnalysis_update.ipynb
 
 - Used to generate an SGS bed (use this one to initiate the MCMC large scale chain)
+- Outputs:
+
+  - The SGS bed used to initialize the large-scale MCMC chain.
+  - Statistical summaries of variogram structure and SGS behavior.
 
 T3_LargeScaleChain_3.ipynb
 
 - The large scale chain guesses possible bed topographies and accepts or rejects the guess
 - run for however many iterations it takes for the loss curve to flatten out
+-Outputs:
+
+  - Full MCMC chain of accepted beds.
+  - Loss curve vs. iteration (to assess convergence).
+  - Intermediate diagnostic plots and arrays.
+  -Final accepted bed used to start the small-scale chain.
 
 T4_SmallScaleChain_3.ipynb
 
 - The small scale chain takes the last bed from the large scale chain and finely tunes it.
 - run this until the small scale chain levels off.
 - the final loss should be around or lower than the loss of bedmachine
+- Outputs:
+
+  - Fine-tuned bed solution starting from the large-scale chain’s final bed.
+  - A second loss curve showing refinement behavior.
+  - Final optimized bed realization (should approach or beat BedMachine loss).
 
 MCMC.py
 
