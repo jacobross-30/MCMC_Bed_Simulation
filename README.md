@@ -151,8 +151,7 @@ Topography.py
 - Lab2_IceFluxDivergence.ipynb – computes mass flux residual
 - Lab3_Geostatistics_2.ipynb – builds variogram and generates SGS realization
 - T2_StatisticalAnalysis_update.ipynb – produces the initial SGS bed for MCMC
-
-  These steps prepare all inputs for the MCMC inversion.
+These steps prepare all inputs for the MCMC inversion.
 
 5. Run the MCMC inversion in T3 and T4
   
