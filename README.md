@@ -15,7 +15,7 @@ Together, these oceanic, geological, and dynamic factors make Ninnis an excellen
 We additionally compare our generated bed realizations with existing large-scale products, including Bedmap and BedMachine, to evaluate consistency, differences, and potential improvements in localized bed estimates for the Ninnis region.
 
 
-<img width="1051" height="552" alt="figures for github" src="https://github.com/user-attachments/assets/32e45893-04db-4a56-a776-f10e15f0278a" />
+![figures for github updated](https://github.com/user-attachments/assets/2d5f58c7-e5c7-4452-871f-da2ad60a53c8)
 
 
 **Data:**
