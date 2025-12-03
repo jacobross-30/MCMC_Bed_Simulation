@@ -110,7 +110,7 @@ T3_LargeScaleChain_3.ipynb
 
 - The large scale chain guesses possible bed topographies and accepts or rejects the guess
 - run for however many iterations it takes for the loss curve to flatten out
--Outputs:
+- Outputs:
 
   - Full MCMC chain of accepted beds.
   - Loss curve vs. iteration (to assess convergence).
